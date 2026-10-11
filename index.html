@@ -67,6 +67,9 @@ em{font-style:italic;font-weight:700}
 .sign .ttl{font-family:var(--f-display);font-weight:500;font-size:15px;opacity:.85}
 .sign .nm{font-family:var(--f-display);font-weight:700;font-size:clamp(20px,2.4vw,26px)}
 .down{display:inline-flex;align-items:center;gap:8px;background:var(--air);color:var(--ink);text-decoration:none;font-family:var(--f-display);font-weight:500;font-size:17px;padding:12px 22px;border-radius:999px}
+.hero-cta{display:flex;gap:10px;flex-wrap:wrap}
+.down.drive{background:transparent;color:var(--air);box-shadow:inset 0 0 0 1px var(--air)}
+.down.drive:hover{background:var(--air);color:var(--violet)}
 .down:hover{background:var(--ink);color:var(--air)}
 
 /* motion: re-runs whenever .play is re-applied */
@@ -233,7 +236,7 @@ details.pr pre{margin:8px 0 0;white-space:pre-wrap;font:12.5px/1.5 ui-monospace,
   </div>
   <div class="wrap hero-foot">
     <div class="sign"><span class="ttl">AI Creator TA</span><span class="nm">Karim Zharbulov</span></div>
-    <a class="down" href="#analysis">↓ Смотреть работу</a>
+    <div class="hero-cta"><a class="down drive" href="https://drive.google.com/drive/folders/1N4OhY8zMEtlgiXFByDbcSYOy7urH-JDA?usp=sharing" target="_blank" rel="noopener">Все файлы на Google Drive ↗</a><a class="down" href="#analysis">↓ Смотреть работу</a></div>
   </div>
 </header>
 
@@ -601,7 +604,7 @@ Sound: quiet kitchen morning ambience, soft birds outside. No music. No subtitle
 <footer>
   <div class="wrap">
     <div class="fl" aria-label="Zimran"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="838.0 248.0 847.0 163.0"><path fill="currentColor" d="M 1036.972656 250 L 1015.789062 258.90625 L 1023.71875 277.773438 L 1044.902344 268.867188 Z M 1036.972656 250  M 1675.421875 329.464844 L 1608.046875 356.34375 L 1603.089844 361.214844 L 1599.761719 357.820312 L 1604.398438 353.265625 L 1627.101562 295.40625 L 1610.957031 283.863281 L 1531.160156 351.632812 L 1525.273438 357.417969 L 1521.941406 354.027344 L 1532.121094 344.023438 L 1553.164062 306.195312 L 1535.285156 296.242188 L 1518.761719 325.945312 L 1458.65625 352.078125 L 1451.757812 358.859375 L 1448.429688 355.464844 L 1454.144531 349.847656 L 1485.445312 294.082031 L 1467.605469 284.0625 L 1467.324219 284.5625 L 1467.234375 284.191406 L 1385.234375 304.238281 L 1385.375 304.808594 L 1385.011719 304.601562 L 1346.277344 372.636719 L 1360.453125 386.464844 L 1435.566406 341.144531 L 1418.3125 371.886719 L 1431.308594 386.28125 L 1502.390625 355.378906 L 1479.683594 396.203125 L 1495.246094 408.984375 L 1593.207031 325.792969 L 1574.625 373.160156 L 1587.9375 386.402344 L 1683.011719 348.476562 L 1675.429688 329.460938 Z M 1389.898438 344.796875 L 1384.492188 350.113281 L 1381.164062 346.722656 L 1388.90625 339.113281 L 1398.625 322.035156 L 1447.363281 310.121094 L 1389.898438 344.792969 Z M 1389.898438 344.796875  M 898.410156 361.019531 L 890.550781 364.546875 L 889.382812 361.945312 L 889.324219 361.949219 L 889.375 361.921875 L 888.605469 360.214844 L 902.273438 354.074219 L 987.386719 302.28125 L 981.140625 283.34375 L 852.039062 295.207031 L 853.914062 315.589844 L 928.554688 308.730469 L 937.8125 305.253906 L 938.761719 307.792969 L 938.992188 307.769531 L 938.796875 307.890625 L 939.480469 309.703125 L 929.914062 313.296875 L 840 368.007812 L 846.359375 386.929688 L 957.90625 375.496094 L 955.824219 355.136719 Z M 898.410156 361.019531  M 1376.535156 284.199219 L 1326.128906 296.523438 L 1317.667969 305.894531 L 1314.140625 302.710938 L 1321.605469 294.441406 L 1322.28125 293.214844 L 1304.386719 283.292969 L 1276.015625 334.476562 L 1223.101562 356.113281 L 1219.78125 359.375 L 1218.445312 358.015625 L 1218.441406 358.019531 L 1218.441406 358.011719 L 1216.449219 355.984375 L 1220.984375 351.53125 L 1243.144531 295.046875 L 1226.785156 283.6875 L 1151.589844 351.242188 L 1143.3125 359.375 L 1139.984375 355.984375 L 1148.484375 347.636719 L 1178.847656 284.128906 L 1163.167969 271.769531 L 1091.199219 330.246094 L 1082 339.28125 L 1078.675781 335.890625 L 1088.492188 326.242188 L 1106.867188 292.714844 L 1088.925781 282.878906 L 1064.71875 327.046875 L 1003.046875 352.855469 L 995.449219 360.320312 L 992.121094 356.929688 L 998.296875 350.859375 L 1030.339844 293.253906 L 1012.460938 283.304688 L 963.167969 371.921875 L 976.054688 386.335938 L 1048.9375 355.835938 L 1039.328125 373.363281 L 1054.75 386.230469 L 1140.765625 316.34375 L 1102.480469 396.410156 L 1118.546875 408.4375 L 1208.316406 327.792969 L 1190.660156 372.800781 L 1204.054688 386.011719 L 1260.167969 363.070312 L 1253.011719 375.976562 L 1270.902344 385.902344 L 1306.054688 322.496094 L 1381.390625 304.082031 Z M 1376.535156 284.199219 "/></svg></div>
-    <div class="sign"><span class="ttl">AI Creator TA</span><span class="nm">Karim Zharbulov</span><a href="https://drive.google.com/drive/folders/1-CguaH5NQ9qJImzmzNYx1NBJd6CDtNU5?usp=sharing" target="_blank" rel="noopener" style="margin-top:8px">Все файлы на Google Drive ↗</a></div>
+    <div class="sign"><span class="ttl">AI Creator TA</span><span class="nm">Karim Zharbulov</span><a href="https://drive.google.com/drive/folders/1N4OhY8zMEtlgiXFByDbcSYOy7urH-JDA?usp=sharing" target="_blank" rel="noopener" style="margin-top:8px">Все файлы на Google Drive ↗</a></div>
   </div>
 </footer>
 
@@ -611,7 +614,7 @@ Sound: quiet kitchen morning ambience, soft birds outside. No music. No subtitle
 
 <script>
 /* src: a file published next to the page (plays here). drive: per-video Drive link. Neither: the shared folder. */
-const DRIVE_FOLDER = "https://drive.google.com/drive/folders/1-CguaH5NQ9qJImzmzNYx1NBJd6CDtNU5?usp=sharing";
+const DRIVE_FOLDER = "https://drive.google.com/drive/folders/1N4OhY8zMEtlgiXFByDbcSYOy7urH-JDA?usp=sharing";
 const VIDEOS = { intro_a:{src:"videos/intro_a.mp4"}, intro_b:{src:"videos/intro_b.mp4"}, long:{src:"videos/long.mp4"}, free_a:{src:"videos/free_a.mp4"}, free_b:{src:"videos/free_b.mp4"}, drama:{src:"videos/drama.mp4"}, scale_v01:{src:"videos/scale_v01.mp4"}, scale_v02:{src:"videos/scale_v02.mp4"}, scale_v03:{src:"videos/scale_v03.mp4"}, scale_v04:{src:"videos/scale_v04.mp4"}, scale_v05:{src:"videos/scale_v05.mp4"}, scale_v06:{src:"videos/scale_v06.mp4"}, scale_v07:{src:"videos/scale_v07.mp4"}, scale_v08:{src:"videos/scale_v08.mp4"} };
 
 const hero = document.getElementById('top');
