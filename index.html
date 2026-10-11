@@ -345,21 +345,20 @@ details.pr pre{margin:8px 0 0;white-space:pre-wrap;font:12.5px/1.5 ui-monospace,
       <div>
         <p class="lead">Лучше всего во всех роликах продаёт <span class="hl">контроль</span>: ты сам говоришь да или нет. Больше всего не хватает доказательств, что это работает.</p>
         <div class="trio">
-          <div class="card"><h4>Что работает</h4><ul class="l"><li>$20 — сумму не страшно потерять</li><li>YES / NO отвечает на главный страх: «AI сольёт мои деньги»</li><li>«No experience, no charts» убирает ощущение, что это сложно</li><li>Там, где показали приложение (№1, №4), верится больше</li></ul></div>
-          <div class="card"><h4>Что мешает во всех пяти</h4><ul class="l"><li>Одно и то же сообщение. Никто не пробует говорить про обучение, время, безопасность или сообщество</li><li>Нигде нет результата, а мелкий дисклеймер («53% успешных сделок», «trading involves risk») ещё и спорит с основным посылом</li><li>Концовки «TRY NOW» без оффера и без причины нажать сейчас (кроме №1)</li><li>Отзывы с пометкой «AI-generated» перестают работать как отзывы</li><li>Риски с модерацией: фейковое выступление (№3), «твит» с галочкой (№5), намёки на заработок</li></ul></div>
+          <div class="card"><h4>Что работает</h4><ul class="l"><li>$20 — сумму не страшно потерять</li><li>YES / NO снимает главный страх: что AI распорядится деньгами без спроса</li><li>«No experience, no charts» убирает ощущение, что это сложно</li><li>Там, где показали приложение (№1, №4), верится больше</li></ul></div>
+          <div class="card"><h4>Что мешает во всех пяти</h4><ul class="l"><li>Одно и то же сообщение. Никто не пробует говорить про обучение, время, безопасность или сообщество</li><li>Нигде нет результата, а мелкий дисклеймер («53% успешных сделок», «trading involves risk») ещё и спорит с основным посылом</li><li>Концовки «TRY NOW» без оффера и без причины нажать сейчас (кроме №1)</li><li>Отзывы с пометкой «AI-generated» перестают работать как отзывы</li></ul></div>
         </div>
       </div>
     </div>
 
     <div class="block split">
-      <h3>Что тестирую в Part 2–3</h3>
+      <h3>На чём делаю акцент в Part 2–3</h3>
       <ol class="hyp">
         <li><span><b>Хук:</b> пуш «AI found a trade» на экране телефона в первом кадре против интриги-реакции, как в №1.</span></li>
         <li><span><b>Главное сообщение:</b> «ты одобряешь каждую сделку» против «AI торгует за тебя». Я думаю, что для 40+ и скептиков контроль сработает лучше.</span></li>
         <li><span><b>Доказательства:</b> честная запись экрана, история сделок за неделю, понятная статистика вместо мелкого шрифта.</span></li>
         <li><span><b>Пари:</b> «$20 на один месяц» из №1 как отдельный оффер и концепт, например челлендж «30 дней с AI».</span></li>
         <li><span><b>Форматы:</b> серия «день 1 / день 7» в стиле №5, съёмка через плечо в телефон, «скептичный родитель» для разных рынков.</span></li>
-        <li><span><b>Герои:</b> женщина 45+, молодой специалист на перерыве, пенсионер с внуком.</span></li>
         <li><span><b>Длина и концовка:</b> версии на 15–30 секунд и эндкард с иконкой приложения и оффером «Start with $20 · Try it for a month».</span></li>
       </ol>
     </div>
@@ -642,9 +641,7 @@ document.addEventListener('keydown', e=>{ if(e.key==='Escape' && !modal.hidden) 
 document.querySelectorAll('[data-video]').forEach(a=>{
   const v = VIDEOS[a.dataset.video] || {};
   if (v.src) { a.addEventListener('click', e=>{ e.preventDefault(); openVideo(v.src); });
-    const ext=document.createElement('a'); ext.className='ext'; ext.href=new URL(v.src, location.href).href;
-    ext.target='_blank'; ext.rel='noopener'; ext.textContent='Открыть со звуком ↗';
-    a.parentNode.insertBefore(ext, a.nextSibling); }
+    }
   else { a.href = v.drive || DRIVE_FOLDER; a.target='_blank'; a.rel='noopener'; }
 });
 
